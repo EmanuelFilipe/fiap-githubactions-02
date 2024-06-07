@@ -1,0 +1,25 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Test Workflow
+
+on:
+  push:
+    branches: [ main, developer ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  test_job:
+    name: Executando o Job de Teste
+    runs-on: self-hosted
+    steps:
+    - name: Step 1
+      uses: actions/checkout@v4
+
+    - name: Step 2
+      run: echo "Olá Mundo! Este é o nosso primeiro job no Github"
+
+    - name: Step 3
+      run: echo "Olá Mundo! Esteé o Step 3"
+    
+    - name: Step 4
+      run: echo "Olá Mundo! Esteé o Step 4"
