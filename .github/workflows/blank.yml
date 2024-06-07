@@ -15,11 +15,8 @@ jobs:
     - name: Step 1
       uses: actions/checkout@v4
 
-    - name: Step 2
-      run: echo "Olá Mundo! Este é o nosso primeiro job no Github"
-
-    - name: Step 3
-      run: echo "Olá Mundo! Esteé o Step 3"
-    
-    - name: Step 4
-      run: echo "Olá Mundo! Esteé o Step 4"
+    - name: Docker Login
+      uses: docker/login-action@v3.2.0
+      with:      
+        username: 'filipesilvadev'
+        password: ${{ secrets.DOCKER_HUB_SECRET }}     
