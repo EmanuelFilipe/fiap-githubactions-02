@@ -30,6 +30,6 @@ jobs:
         # o ponto '.' indica que irá procurar pelo DockerFile na raiz deste repositório
         context: .
         # List of tags referente a esta imagem
-        tags: latest        
+        tags: filipesilvadev/fiap-githubactions:latest        
         push: true
               
